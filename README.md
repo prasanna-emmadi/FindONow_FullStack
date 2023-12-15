@@ -1,8 +1,9 @@
 # FS16-FullStack
 
 ## Deployment links
-- Frontend - https://regal-sawine-5bf010.netlify.app/
-- Backend - https://fs16-backend.onrender.com 
+
+- Frontend - https://transcendent-croissant-f53b91.netlify.app/
+- Backend - https://fs16-backend.onrender.com
 
 ## Docker
 
