@@ -1,0 +1,23 @@
+version: "3"
+services:
+  api:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    container_name: backend
+    environment:
+        - DB_URL=${DB_URL}
+  client:
+    build: ./frontend
+    ports:
+      - "80:80"
+    container_name: frontend
+    environment:
+        - REACT_APP_SEVERL_URL=${SERVER_URL}
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    container_name: fs16-mongodb
